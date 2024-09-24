@@ -12,9 +12,8 @@ struct DEV_SWITCH : Service::Switch {
   }
 
   boolean update() {
-
     digitalWrite(ledPin, (int)!(power->getNewVal<bool>()));
-
     return(true);
   }
+
 };

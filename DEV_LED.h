@@ -11,9 +11,8 @@ struct DEV_LED : Service::LightBulb {
   }
 
   boolean update() {
-
     digitalWrite(ledPin, power->getNewVal());
-
     return(true);
   }
+
 };
